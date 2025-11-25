@@ -101,6 +101,15 @@ function draw() {
     legend += `   •   User 4-tuple depth = ${userDepth}`;
   }
   drawLegendBoxes();
+  noStroke();
+  fill(120);
+  textSize(13);
+  textAlign(LEFT, BOTTOM);
+  text(
+    "Tip: click near a point to inspect a 4-tuple and its depth",
+    12,
+    height - 10
+  );
 }
 
 function drawLegendBoxes() {
